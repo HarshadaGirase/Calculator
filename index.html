@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src= 
+    "https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+            integrity= 
+    "sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"></script> 
+        <script src= 
+    "https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+            integrity= 
+    "sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"></script> 
+</head>
+<body>
+    
+    <h1>Calculator</h1>
+    <div class="parent" >
+        <div class="child output"> <input type="text" id="result"  > </div>
+            <button class="box dark-grey" onClick="clr()">AC</button>
+            <button class="box dark-grey" onClick="dis('+/-')"  onkeydown="myFunction(event)" >+/-</button>
+            <button class="box dark-grey" onClick="dis('%')"  onkeydown="myFunction(event)">%</button>
+            <button class="box orange" onClick="dis('/')"  onkeydown="myFunction(event)">/</button>
+            <button class="box light-grey" onClick="dis('7')"  onkeydown="myFunction(event)">7</button>
+            <button class="box light-grey" onClick="dis('8')"  onkeydown="myFunction(event)">8</button>
+            <button class="box light-grey" onClick="dis('9')"  onkeydown="myFunction(event)">9</button>
+            <button class="box orange" onClick="dis('*')"  onkeydown="myFunction(event)">*</button>
+            <button class="box light-grey" onClick="dis('4')"  onkeydown="myFunction(event)">4</button>
+               <button class="box light-grey" onClick="dis('5')"  onkeydown="myFunction(event)">5</button>
+                <button class="box light-grey " onClick="dis('6')"  onkeydown="myFunction(event)">6</button>
+                <button class="box orange" onClick="dis('-')"  onkeydown="myFunction(event)">-</button>
+                <button class="box light-grey" onClick="dis('1')"  onkeydown="myFunction(event)">1</button>
+                <button class="box light-grey" onClick="dis('2')"  onkeydown="myFunction(event)">2</button>
+                <button class="box light-grey" onClick="dis('3')"  onkeydown="myFunction(event)">3</button>
+                <button class="box orange" onClick="dis('+')"  onkeydown="myFunction(event)">+</button>
+                <button class="box zero  light-grey" onClick="dis('0')"  onkeydown="myFunction(event)">0</button>
+                <button class="box  light-grey" onClick="dis('.')"  onkeydown="myFunction(event)">.</button>
+                <button class="box orange" id="#calculation" onclick="solve()">=</button>
+      
+    </div>
+    
+<script src="script.js"></script>
+</body>
+</html>
